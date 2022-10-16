@@ -1,0 +1,382 @@
+.screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.screen div {
+    -webkit-text-size-adjust: none;
+}
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --black-2: #00000080;
+    --boston-blue: #3b96c3;
+    --thunder: #2e2e2e;
+
+}
+
+.inter-normal-thunder-16px {
+    color: var(--thunder);
+    font-family: "Inter", "Helvetic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.inter-semi-bold-black-18px {
+    color: var(--black);
+    font-family: "Inter", "Helvetic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.inter-normal-black-18px {
+    color: var(--black-2);
+    font-family: "Inter", "Helvetic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* screen - main-screen */
+
+.main-screen {
+    background-color: var(--white);
+    border: 1px none;
+    height: 900px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.main-screen .contents {
+    background-color: transparent;
+    height: 900px;
+    left: 28px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.main-screen .bg-fade {
+    background: linear-gradient(180deg, rgb(227.37499594688416, 236.76749914884567, 255) 0%, rgba(227.37499594688416, 236.76749914884567, 255, 0) 100%);
+    background-color: transparent;
+    border: 1px none;
+    height: 900px;
+    left: -28px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.main-screen .ellipse-1 {
+    background-color: #29b2ff;
+    border: 1px none;
+    border-radius: 170px;
+    filter: blur(250px);
+    height: 340px;
+    left: 203px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 95px;
+    width: 340px;
+}
+
+.main-screen .ellipse-2 {
+    background-color: #29b2ff;
+    border: 1px none;
+    border-radius: 170px;
+    filter: blur(250px);
+    height: 340px;
+    left: 1112px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 770px;
+    width: 340px;
+}
+
+.main-screen .map {
+    background-color: transparent;
+    height: 500px;
+    left: 782px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 200px;
+    width: 500px;
+}
+
+.main-screen .pin-icon-1 {
+    background-color: transparent;
+    height: 99px;
+    left: 855px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 401px;
+    width: 63px;
+}
+
+.main-screen .pin-icon-2 {
+    background-color: transparent;
+    height: 99px;
+    left: 568px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 180px;
+    width: 63px;
+}
+
+.main-screen .title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", "Helvetic";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    left: 80px;
+    letter-spacing: 0.00px;
+    line-height: 57.6px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 195px;
+    white-space: nowrap;
+    width: 410px;
+}
+
+.main-screen .sub-title {
+    background-color: transparent;
+    color: #000000cc;
+    font-family: "Inter", "Helvetic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 60px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 284px;
+    white-space: nowrap;
+    width: 424px;
+}
+
+.main-screen .our-address {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Poppins", "Helvetic";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    height: auto;
+    left: 496px;
+    letter-spacing: 0.22px;
+    line-height: 27.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: justify;
+    top: 284px;
+    width: 473px;
+}
+
+.main-screen .repair-icon {
+    background-color: #bed3ff;
+    border: 1px none;
+    border-radius: 20px;
+    height: 60px;
+    left: 48px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 453px;
+    width: 60px;
+}
+
+.main-screen .changes-icon {
+    background-color: #defeea;
+    border: 1px none;
+    border-radius: 20px;
+    height: 60px;
+    left: 48px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 600px;
+    width: 60px;
+}
+
+.main-screen .sales-icon {
+    background-color: #ffeea5;
+    border: 1px none;
+    border-radius: 20px;
+    height: 60px;
+    left: 48px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 747px;
+    width: 60px;
+}
+
+.main-screen .sales-desc {
+    background-color: transparent;
+    height: 59px;
+    left: 131px;
+    position: absolute;
+    top: 747px;
+    width: 606px;
+}
+
+.main-screen .sales-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.main-screen .sales-text {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 30px;
+    white-space: nowrap;
+    width: 602px;
+}
+
+.main-screen .changes-desc {
+    background-color: transparent;
+    height: 88px;
+    left: 131px;
+    position: absolute;
+    top: 600px;
+    width: 606px;
+}
+
+.main-screen .changes-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.main-screen .changes-text {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 30px;
+    width: 602px;
+}
+
+.main-screen .repairs-desc {
+    background-color: transparent;
+    height: 59px;
+    left: 131px;
+    position: absolute;
+    top: 453px;
+    width: 606px;
+}
+
+.main-screen .repairs-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.main-screen .repairs-text {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 30px;
+    white-space: nowrap;
+    width: 602px;
+}
+
+.main-screen .repairs-img {
+    background-color: transparent;
+    height: 30px;
+    left: 65px;
+    position: absolute;
+    top: 464px;
+    width: 27px;
+}
+
+.main-screen .changes-img {
+    background-color: transparent;
+    height: 30px;
+    left: 63px;
+    position: absolute;
+    top: 615px;
+    width: 30px;
+}
+
+.main-screen .sales-img {
+    background-color: transparent;
+    height: 15px;
+    left: 62px;
+    position: absolute;
+    top: 769px;
+    width: 31px;
+}

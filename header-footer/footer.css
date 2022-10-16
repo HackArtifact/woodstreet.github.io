@@ -1,0 +1,1791 @@
+  /* Plain Footer */
+
+  .main-screen .plain-footer {
+    background-color: transparent;
+    border: 1px none;
+    height: 134px;
+    left: 0px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    bottom: -5vh;
+    width: 100%;
+  }
+
+  .main-screen .p-twitter {
+    background-color: transparent;
+    height: 20px;
+    left: 0vh;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 53px;
+    width: 25px;
+  }
+  
+  .main-screen .p-facebook {
+    background-color: transparent;
+    height: 20px;
+    left: 8vh;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 53px;
+    width: 20px;
+  }
+  
+  .main-screen .p-instagram {
+    background-color: transparent;
+    height: 20px;
+    left: 16vh;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 53px;
+    width: 20px;
+  }
+
+  .main-screen .p-footer-mid {
+    background-color: transparent;
+    height: auto;
+    left: 62vh;
+    letter-spacing: 0.00px;
+    line-height: 22px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 36px;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .main-screen .p-footer-name {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    right: 5vh;
+    letter-spacing: 2.97px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    width: 220px;
+  }
+  
+  /* Logos and footer words */
+
+  .main-screen .twitter {
+    background-color: transparent;
+    height: 20px;
+    left: 64px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 42px;
+    width: 25px;
+  }
+  
+  .main-screen .facebook {
+    background-color: transparent;
+    height: 20px;
+    left: 143px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 42px;
+    width: 20px;
+  }
+  
+  .main-screen .instagram {
+    background-color: transparent;
+    height: 20px;
+    left: 217px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 42px;
+    width: 20px;
+  }
+
+  .main-screen .footer-withDots {
+    background-color: transparent;
+    height: 267px;
+    left: -0px;
+    position: absolute;
+    top: 2667px;
+    width: 1440px;
+  }
+  
+  .main-screen .footer {
+    background-color: var(--white);
+    border: 1px none;
+    height: 134px;
+    left: 0px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 133px;
+    width: 1440px;
+  }
+  
+  .main-screen .footer-name {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 1211px;
+    letter-spacing: 2.97px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 40px;
+    width: 190px;
+  }
+  
+  .main-screen .footer-mid {
+    background-color: transparent;
+    height: auto;
+    left: 578px;
+    letter-spacing: 0.00px;
+    line-height: 22px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 36px;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .main-screen .span1 {
+    text-decoration: underline;
+  }
+
+  .main-screen .span3 {
+    text-decoration: underline;
+  }
+ 
+ /* Footer Ellipses (Recommend not doing again)*/
+
+ .main-screen .ellipse-480-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-481-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-482-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-483-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 80px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-484-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 80px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-485-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 80px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-486-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 125px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-487-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 125px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-488-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 125px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-489-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 173px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-490-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 173px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-491-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 173px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-492-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 221px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-493-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 221px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-494-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 221px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-495-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 266px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-496-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 266px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-497-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 266px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-498-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 314px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-499-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 314px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-500-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 314px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-501-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 362px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-502-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 362px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-503-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 362px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-504-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 407px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-505-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 407px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-506-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 407px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-507-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 455px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-508-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 455px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-509-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 455px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-510-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 503px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-511-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 503px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-512-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 503px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-513-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 548px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-514-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 548px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-515-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 548px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-516-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-517-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-518-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-519-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-520-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-521-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-522-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-523-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-524-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-525-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-526-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-527-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-528-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-529-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-530-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-531-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-532-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-533-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-534-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-535-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-536-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 596px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-537-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-538-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-539-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 644px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-540-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-541-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-542-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 689px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-543-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-544-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-545-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 737px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-546-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-547-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-548-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 785px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-549-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-550-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-551-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 830px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-552-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 879px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-553-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 879px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-554-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 879px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-555-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 927px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-556-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 927px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-557-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 927px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-558-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 972px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-559-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 972px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-560-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 972px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-561-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-562-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-563-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-564-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-565-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-566-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-567-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-568-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-569-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-570-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-571-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-572-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-573-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-574-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-575-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-576-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-577-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-578-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-579-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-580-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-581-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1020px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-582-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-583-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-584-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1068px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-585-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-586-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-587-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1113px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-588-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-589-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-590-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1161px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-591-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-592-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-593-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1209px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-594-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-595-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-596-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1254px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-597-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-598-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-599-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-600-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-601-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-602-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-603-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-604-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-605-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-606-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-607-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-608-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1302px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-609-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-610-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-611-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1350px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-612-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-613-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 70px;
+    width: 9px;
+  }
+  
+  .main-screen .ellipse-614-light {
+    background-color: var(--fog);
+    border: 1px none;
+    border-radius: 4.5px;
+    height: 9px;
+    left: 1398px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 35px;
+    width: 9px;
+  }
+  /* ....................... */

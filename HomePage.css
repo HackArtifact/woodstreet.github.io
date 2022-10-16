@@ -1,0 +1,951 @@
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+    @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+    @import url("https://fonts.googleapis.com/css?family=Inter:400,700,900,500,600|Roboto:400");
+
+  .screen * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  
+  .screen div {
+    -webkit-text-size-adjust: none;
+  }
+ 
+  .screen a {
+    display: contents;
+    text-decoration: none;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: visible;
+    width: 100%;
+  }
+   
+  .overlay {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Setting names of colours and fonts */
+  :root { 
+    --black: #000000;
+    --black-2: #00000080;
+    --black-3: #000000b2;
+    --cloud-burst: #272d4e;
+    --fog: #d4d4ff;
+    --gray: #7f7f7f;
+    --mercury: #e6e6e6;
+    --thunder: #2e2e2e;
+    --white: #ffffff;
+   
+    --font-size-l: 20px;
+    --font-size-m: 18px;
+    --font-size-s: 16px;
+    --font-size-xl: 22px;
+    --font-size-xs: 12px;
+    --font-size-xxl: 24px;
+    --font-size-xxxl: 60px;
+   
+    --font-family-inter: "Inter", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+  }
+  .inter-normal-thunder-16px {
+    color: var(--thunder);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .roboto-normal-cloud-burst-12px {
+    color: var(--cloud-burst);
+    font-family: var(--font-family-roboto);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .inter-semi-bold-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  .inter-normal-black-18px {
+    color: var(--black-2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .inter-normal-black-18px-2 {
+    color: var(--black-3);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .inter-normal-gray-16px {
+    color: var(--gray);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .inter-bold-thunder-24px {
+    color: var(--thunder);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  /* ............................ */ 
+  
+  /* main-screen */
+  
+  .main-screen {
+    background-color: var(--white);
+    border: 1px none;
+    height: 2929px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .main-screen .bg-fade {
+    background-color: transparent;
+    height: 1076px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 1440px;
+  }
+  
+  .main-screen .title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    left: 113px;
+    letter-spacing: 0.00px;
+    line-height: 72.0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 259px;
+    width: 501px;
+  }
+  
+  .main-screen .wood-street-academy {
+    background-color: transparent;
+    color: var(--black-2);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 116px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 407px;
+    width: 696px;
+  }
+  
+  .main-screen .connect-us {
+    background-color: transparent;
+    color: #6854fc;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 352px;
+    letter-spacing: 0.00px;
+    line-height: 35.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 548px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .button {
+    align-items: center;
+    background-color: #6854fc;
+    border: 1px none;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    height: auto;
+    justify-content: center;
+    left: 113px;
+    mix-blend-mode: normal;
+    padding: 10px 20px;
+    position: absolute;
+    top: 544px;
+    width: fit-content;
+  }
+
+  .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+
+  .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+
+  .button:hover span {
+  padding-right: 25px;
+  }
+
+  .button:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+  
+  .main-screen .make-booking {
+    background-color: transparent;
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.00px;
+    line-height: 25.2px;
+    margin-top: -1.00px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .main-screen .landing-pic {
+    background-color: transparent;
+    height: 794px;
+    left: 891px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 87px;
+    width: 502px;
+  }
+  
+  .main-screen .landing-desc {
+    background-color: transparent;
+    height: auto;
+    left: 965px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1455px;
+    width: 320px;
+  }
+  
+  .main-screen .why-us {
+    background-color: transparent;
+    height: auto;
+    left: 965px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1415px;
+    white-space: nowrap;
+    width: 304px;
+  }
+  
+  .main-screen .vision-desc {
+    background-color: transparent;
+    height: auto;
+    left: 549px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1344px;
+    width: 328px;
+  }
+  
+  .main-screen .our-vision {
+    background-color: transparent;
+    height: auto;
+    left: 549px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1304px;
+    white-space: nowrap;
+    width: 304px;
+  }
+  
+  .main-screen .we-are-desc {
+    background-color: transparent;
+    height: auto;
+    left: 133px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1222px;
+    width: 320px;
+  }
+  
+  .main-screen .who-we-are {
+    background-color: transparent;
+    height: auto;
+    left: 133px;
+    letter-spacing: 0.00px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1182px;
+    white-space: nowrap;
+    width: 304px;
+  }
+  
+  .main-screen .we-are-img {
+    background-color: transparent;
+    height: 192px;
+    left: 133px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 983px;
+    width: 320px;
+  }
+  
+  .main-screen .vision-img {
+    background-color: transparent;
+    height: 192px;
+    left: 541px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1103px;
+    width: 320px;
+  }
+  
+  .main-screen .why-us-img {
+    background-color: transparent;
+    height: 192px;
+    left: 965px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 1216px;
+    width: 296px;
+  }
+  
+  .main-screen .diagonal-blue {
+    background-color: transparent;
+    height: 587px;
+    left: 236px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 716px;
+    width: 1204px;
+  }
+  
+  .main-screen .acc-review {
+    background-color: var(--white);
+    border: 2px solid;
+    border-color: var(--mercury);
+    border-radius: 20px;
+    height: 264px;
+    left: 1027px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 2145px;
+    width: 385px;
+  }
+  
+  .main-screen .acc-img {
+    background-color: transparent;
+    height: 60px;
+    left: 12px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    width: 60px;
+  }
+  
+  .main-screen .acc-header {
+    background-color: transparent;
+    height: 49px;
+    left: 92px;
+    position: absolute;
+    top: 18px;
+    width: 183px;
+  }
+  
+  .main-screen .accountant {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.40px;
+    line-height: 26.0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .acc-name {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 23.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 26px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .acc-text {
+    background-color: transparent;
+    height: auto;
+    left: 12px;
+    letter-spacing: 0.36px;
+    line-height: 25.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 90px;
+    width: 349px;
+  }
+  
+  .main-screen .lec-review {
+    background-color: var(--white);
+    border: 2px solid;
+    border-color: var(--mercury);
+    border-radius: 20px;
+    height: 264px;
+    left: 591px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 2166px;
+    width: 385px;
+  }
+  
+  .main-screen .lec-img {
+    background-color: transparent;
+    height: 60px;
+    left: 12px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    width: 60px;
+  }
+  
+  .main-screen .lec-header {
+    background-color: transparent;
+    height: 49px;
+    left: 92px;
+    position: absolute;
+    top: 18px;
+    width: 121px;
+  }
+  
+  .main-screen .lec-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.40px;
+    line-height: 26.0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .lec-name {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 23.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 26px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .lec-text {
+    background-color: transparent;
+    height: auto;
+    left: 12px;
+    letter-spacing: 0.36px;
+    line-height: 25.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 87px;
+    width: 363px;
+  }
+  
+  .main-screen .student-review {
+    background-color: var(--white);
+    border: 2px solid;
+    border-color: var(--mercury);
+    border-radius: 20px;
+    height: 188px;
+    left: 591px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 1948px;
+    width: 385px;
+  }
+  
+  .main-screen .student-img {
+    background-color: transparent;
+    height: 60px;
+    left: 12px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    width: 60px;
+  }
+  
+  .main-screen .student-header {
+    background-color: transparent;
+    height: 49px;
+    left: 92px;
+    position: absolute;
+    top: 18px;
+    width: 141px;
+  }
+  
+  .main-screen .student-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.40px;
+    line-height: 26.0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .student-name {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 23.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 26px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .student-text {
+    background-color: transparent;
+    height: auto;
+    left: 12px;
+    letter-spacing: 0.36px;
+    line-height: 25.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 73px;
+    width: 349px;
+  }
+  
+  .main-screen .teacher-review {
+    background-color: var(--white);
+    border: 2px solid;
+    border-color: var(--mercury);
+    border-radius: 20px;
+    height: 167px;
+    left: 1027px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 1948px;
+    width: 385px;
+  }
+  
+  .main-screen .teacher-img {
+    background-color: transparent;
+    height: 60px;
+    left: 12px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    position: absolute;
+    top: 12px;
+    width: 60px;
+  }
+  
+  .main-screen .teacher-header {
+    background-color: transparent;
+    height: 49px;
+    left: 92px;
+    position: absolute;
+    top: 18px;
+    width: 132px;
+  }
+  
+  .main-screen .teacher-title {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.40px;
+    line-height: 26.0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .teacher-name {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.36px;
+    line-height: 23.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 26px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .teacher-text {
+    background-color: transparent;
+    height: auto;
+    left: 12px;
+    letter-spacing: 0.36px;
+    line-height: 25.2px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 90px;
+    width: 349px;
+  }
+  
+  .main-screen .reviews {
+    background-color: transparent;
+    color: #172141;
+    font-family: var(--font-family-inter);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    height: auto;
+    left: 589px;
+    letter-spacing: 0.00px;
+    line-height: 57.6px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 1752px;
+    white-space: nowrap;
+    width: 262px;
+  }
+  
+  .main-screen .review-img {
+    background-color: transparent;
+    height: 700px;
+    left: 91px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1906px;
+    width: 403px;
+  }
+  
+  .main-screen .review-sub {
+    background-color: transparent;
+    color: #b2b2cacc;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 506px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 1818px;
+    width: 427px;
+  }
+  
+  .main-screen .horizontal-colour {
+    background: linear-gradient(180deg, rgb(207.10250616073608, 206.12500101327896, 255) 0%, rgb(206.12500101327896, 249.1349995136261, 255) 100%);
+    background-color: transparent;
+    border: 1px none;
+    border-radius: 100px;
+    box-shadow: inset 0px 4px 4px #00000040;
+    height: 8px;
+    left: 65px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1707px;
+    width: 1323px;
+  }
+  
+  /* ....................... */
+
+  /* Rotating x's */
+
+  .main-screen .x {
+    background-color: transparent;
+    height: 16px;
+    left: 1190px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1766px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-0 {
+    background-color: transparent;
+    height: 16px;
+    left: 1400px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1816px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-1 {
+    background-color: transparent;
+    height: 16px;
+    left: 589px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 174px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-2 {
+    background-color: transparent;
+    height: 16px;
+    left: 44px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 349px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-3 {
+    background-color: transparent;
+    height: 16px;
+    left: -11578px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 483px;
+    width: 16px;
+  }
+
+  .main-screen .x-alt-4 {
+    background-color: transparent;
+    height: 16px;
+    left: 447px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1609px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-5 {
+    background-color: transparent;
+    height: 16px;
+    left: 295px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1762px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-6 {
+    background-color: transparent;
+    height: 16px;
+    left: 927px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2483px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-7 {
+    background-color: transparent;
+    height: 16px;
+    left: 775px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2636px;
+    width: 16px;
+  }
+  
+  .main-screen .x-alt-8 {
+    background-color: transparent;
+    height: 16px;
+    left: 220px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2653px;
+    width: 16px;
+  }
+
+  /* Ellipses */
+
+  .main-screen .ellipse-21 {
+    background-color: transparent;
+    height: 26px;
+    left: 70px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1577px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-23 {
+    background-color: transparent;
+    height: 26px;
+    left: 541px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2052px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-24 {
+    background-color: transparent;
+    height: 26px;
+    left: 126px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1669px;
+    width: 26px;
+  }
+
+  .main-screen .ellipse-25 {
+    background-color: transparent;
+    height: 26px;
+    left: 959px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 158px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-26 {
+    background-color: transparent;
+    height: 26px;
+    left: 481px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 625px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-27 {
+    background-color: transparent;
+    height: 26px;
+    left: 265px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 218px;
+    width: 26px;
+  }
+  .main-screen .ellipse-28 {
+    background-color: transparent;
+    height: 26px;
+    left: 550px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2451px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-29 {
+    background-color: transparent;
+    height: 26px;
+    left: 606px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2543px;
+    width: 26px;
+  }
+
+  .main-screen .ellipse-30 {
+    background-color: transparent;
+    height: 26px;
+    left: 1355px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 2092px;
+    width: 26px;
+  }
+  
+  .main-screen .ellipse-31 {
+    background-color: transparent;
+    height: 26px;
+    left: 1405px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1997px;
+    width: 26px;
+  }

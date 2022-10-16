@@ -1,0 +1,800 @@
+.main-screen {
+    background-color: var(--white);
+    border: 1px none;
+    height: 1200px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 1440px;
+}
+
+.main-screen .order-page {
+    background-color: transparent;
+    height: 631px;
+    left: 29px;
+    position: absolute;
+    top: 228px;
+    width: 316px;
+}
+
+.main-screen .top-part {
+    background-color: transparent;
+    height: 333px;
+    left: -13px;
+    position: absolute;
+    top: 0px;
+    width: 326px;
+}
+
+.main-screen .top-order {
+    background-color: transparent;
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 315px;
+    height: 688px;
+    box-shadow: 0px 8px 20px #00000040;
+    border-radius: 66px;
+}
+
+.main-screen .radio-me {
+    height: 16px;
+    left: 31px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 40px;
+    width: 140px;
+    color: var(--black);
+    font-family: "Roboto", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main-screen .radio-other {
+    height: 16px;
+    left: 216px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 40px;
+    width: 16px;
+}
+
+.main-screen .Other {
+    color: var(--black);
+    font-family: "Roboto", Helvetica;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 240px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 42px;
+    width: 51px;
+}
+
+.main-screen .first-name {
+    background-color: transparent;
+    height: auto;
+    left: 34px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 115px;
+    width: 250px;
+}
+
+.main-screen .first-name-input {
+    background-color: var(--mystic-2);
+    border: 1px none;
+    border-radius: 24px;
+    /* filter: blur(4px); */
+    ;
+    height: 30px;
+    left: 33px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 147px;
+    width: 255px;
+}
+
+.main-screen .last-name {
+    background-color: transparent;
+    height: auto;
+    left: 35px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 195px;
+    width: 124px;
+}
+
+.main-screen .order-title {
+    background-color: transparent;
+    height: auto;
+    left: 35px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 25px;
+    width: 186px;
+}
+
+.main-screen .last-name-input {
+    background-color: var(--mystic-2);
+    border: 1px none;
+    border-radius: 24px;
+    /* filter: blur(4px); */
+    ;
+    height: 30px;
+    left: 34px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 230px;
+    width: 255px;
+}
+
+.main-screen .number {
+    background-color: transparent;
+    height: auto;
+    left: 34px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 275px;
+    width: 250px;
+}
+
+.main-screen .number-input {
+    background-color: var(--mystic-2);
+    border: 1px none;
+    border-radius: 24px;
+    /* filter: blur(4px); */
+    ;
+    height: 30px;
+    left: 33px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 307px;
+    width: 255px;
+}
+
+.main-screen .email {
+    background-color: transparent;
+    height: auto;
+    left: 34px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 355px;
+    width: 124px;
+}
+
+input[type=text] {
+    font-size: 16px;
+    width: 38vh;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}
+input[type=email] {
+    font-size: 16px;
+    width: 38vh;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}
+input[type=select] {
+    font-size: 16px;
+    width: 38vh;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}
+input[type=tel] {
+    font-size: 16px;
+    width: 38vh;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}
+
+input[type='radio'] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(45, 139, 246);
+}
+
+.main-screen .email-input {
+    background-color: var(--mystic-2);
+    border: 1px none;
+    border-radius: 24px;
+    /* filter: blur(4px); */
+    ;
+    height: 30px;
+    left: 33px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 387px;
+    width: 255px;
+}
+
+.main-screen .phone {
+    background-color: transparent;
+    height: auto;
+    left: 33px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 435px;
+    width: 124px;
+}
+
+.main-screen .phone-input {
+    background-color: var(--mystic-2);
+    border: 1px none;
+    border-radius: 24px;
+    /* filter: blur(4px); */
+    height: 30px;
+    left: 32px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 467px;
+    width: 255px;
+}
+
+
+.main-screen .booking-title {
+    background-color: transparent;
+    height: 90px;
+    position: absolute;
+    top: 117px;
+    width: 225px;
+}
+
+.main-screen .page-subtitle {
+    background-color: transparent;
+    color: #777777;
+    font-family: "Poppins", Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    left: 30px;
+    letter-spacing: 0.28px;
+    line-height: 22.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 52px;
+    width: 215px;
+}
+
+.main-screen .page-title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 28px;
+    letter-spacing: 0.72px;
+    line-height: 57.6px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: 203px;
+}
+
+.main-screen .button {
+    position: relative;
+    background-color: #e967f5;
+    box-shadow: -10px 12px 20px #00000040;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 27px;
+    color: #FFFFFF;
+    padding: 26px;
+    width: 205px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    top: 567px;
+    left: 53px;
+}
+
+.main-screen .buttonTech {
+    position: relative;
+    background-color: #e967f5;
+    box-shadow: -10px 12px 20px #00000040;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 27px;
+    color: #FFFFFF;
+    padding: 26px;
+    width: 205px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    top: 250px;
+    left: 485px;
+}
+
+.main-screen .buttonLog {
+    position: relative;
+    background-color: #ff3b3b;
+    box-shadow: -10px 12px 20px #00000040;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 17px;
+    width: 152px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    top: 20px;
+    left: 1218px;
+}
+
+.main-screen .ellipse-1 {
+    background-color: #29b2ff;
+    border: 1px none;
+    border-radius: 170px;
+    filter: blur(200px);
+    ;
+    height: 340px;
+    left: 959px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 984px;
+    width: 340px;
+}
+
+.main-screen .ellipse-2 {
+    background-color: #29b2ff;
+    border: 1px none;
+    border-radius: 170px;
+    filter: blur(200px);
+    ;
+    height: 340px;
+    left: 1126px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 278px;
+    width: 340px;
+}
+
+.main-screen .ellipse-3 {
+    background-color: transparent;
+    height: 26px;
+    left: 324px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 921px;
+    width: 26px;
+}
+
+.main-screen .ellipse-4 {
+    background-color: transparent;
+    height: 26px;
+    mix-blend-mode: normal;
+    position: absolute;
+    left: 1130px;
+    top: 1058px;
+    width: 26px;
+}
+
+.main-screen .ellipse-5 {
+    background-color: transparent;
+    height: 26px;
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 26px;
+    left: 0px;
+    top: 470.98px;
+}
+
+.main-screen .ellipse-6 {
+    background-color: transparent;
+    height: 26px;
+    mix-blend-mode: normal;
+    position: absolute;
+    width: 26px;
+    left: 329.22px;
+    top: 126.22px;
+}
+
+.main-screen .x-1 {
+    background-color: transparent;
+    height: 16px;
+    left: 648px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1053px;
+    width: 16px;
+}
+
+.main-screen .x-2 {
+    background-color: transparent;
+    height: 16px;
+    left: 1300px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1062px;
+    width: 16px;
+}
+
+.main-screen .x-3 {
+    background-color: transparent;
+    height: 16px;
+    left: 300px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 1062px;
+    width: 16px;
+}
+
+.main-screen .tracking {
+    background-color: transparent;
+    height: 760px;
+    left: 369px;
+    position: absolute;
+    top: 157px;
+    width: 1050px;
+    }
+
+.main-screen .bg-colour {
+    background: linear-gradient(180deg, rgba(0, 120.78498512506485, 208.24999898672104, 0.20999999344348907) 0%, rgba(0, 211.3100203871727, 240.12499898672104, 0.07000000029802322) 100%);
+    background-color: transparent;
+    border: 1px none;
+    border-radius: 66px;
+    filter: blur(4px);
+    ;
+    height: 760px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 1050px;
+}
+
+.main-screen .status {
+    background-color: transparent;
+    height: 370px;
+    left: 64px;
+    position: absolute;
+    top: 35px;
+    width: 939px;
+}
+
+.main-screen .status-bg {
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 18px;
+    height: 370px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 929px;
+}
+
+.main-screen .ordered {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 60px;
+    width: auto;
+}
+
+.main-screen .radio-order {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 60px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .tech-ass {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 100px;
+    width: auto;
+}
+
+.main-screen .radio-tech {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 100px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .p-order {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 140px;
+    width: auto;
+}
+
+.main-screen .radio-parts {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 140px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .in-progress {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 180px;
+    width: auto;
+}
+
+.main-screen .radio-progress {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 180px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .invoice {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 220px;
+    width: auto;
+}
+
+.main-screen .radio-invoice {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 220px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .expected-delivery {
+    background-color: transparent;
+    height: auto;
+    left: 46px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 260px;
+    width: auto;
+}
+
+.main-screen .radio-collect {
+    background-color: transparent;
+    height: auto;
+    left: 22px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 260px;
+    width: auto;
+    pointer-events: none;
+}
+
+.main-screen .message-technician {
+    background-color: transparent;
+    height: auto;
+    left: 496px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    width: 170px;
+}
+
+.main-screen .tech-msg {
+    background-color: transparent;
+    border-color: #29b2ff;
+    box-shadow: -10px 12px 20px #4c7af740;
+    height: 177px;
+    left: 309px;
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: 54px;
+    width: 536px;
+}
+
+.main-screen .status-title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 16px;
+    letter-spacing: 0.72px;
+    line-height: 57.6px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: -4px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.main-screen .information {
+    background-color: transparent;
+    height: 278px;
+    left: 0px;
+    position: absolute;
+    top: 410px;
+    width: 442px;
+}
+
+.main-screen .info-bg {
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 18px;
+    height: 278px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 440px;
+}
+
+.main-screen .info-title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 16px;
+    letter-spacing: 0.48px;
+    line-height: 38.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 11px;
+    width: 298px;
+}
+
+.main-screen .history {
+    background-color: transparent;
+    height: 278px;
+    left: 489px;
+    position: absolute;
+    top: 410px;
+    width: 442px;
+}
+
+.main-screen .history-bg {
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 18px;
+    height: 278px;
+    left: 0px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 440px;
+}
+
+.main-screen .history-title {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    height: auto;
+    left: 13px;
+    letter-spacing: 0.48px;
+    line-height: 38.4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 11px;
+    width: 176px;
+}

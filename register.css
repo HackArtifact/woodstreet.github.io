@@ -1,0 +1,435 @@
+
+
+/* screen - main-screen */
+
+.main-screen {
+    background-color: var(--white);
+    border: 1px none;
+    height: 900px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.main-screen .contents {
+    background-color: transparent;
+    height: 900px;
+    left: 28px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.main-screen .bg-fade {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 50%, rgba(136, 178, 255, 0.397) 100%);
+    background-color: transparent;
+    border: 1px none;
+    height: 900px;
+    left: -28px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.main-screen .contact-frame {
+    background-color: var(--white);
+    border: 1px none;
+    border-radius: 60px;
+    box-shadow: 0px 8px 20px #00000040;
+    height: 557px;
+    left: 258px;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    position: absolute;
+    top: 171px;
+    width: 954px;
+}
+
+.main-screen .contact-bg {
+    background-color: var(--white);
+    border: 1px none;
+    height: 557px;
+    left: 4px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0px;
+    width: 954px;
+}
+
+.main-screen .first-name {
+    background-color: transparent;
+    height: auto;
+    left: 102px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 87px;
+    white-space: nowrap;
+    width: 97px;
+}
+
+.main-screen .mail {
+    background-color: transparent;
+    height: auto;
+    left: 102px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 174px;
+    white-space: nowrap;
+    width: 37px;
+}
+
+.main-screen .last-name {
+    background-color: transparent;
+    height: auto;
+    left: 494px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 87px;
+    white-space: nowrap;
+    width: 95px;
+}
+
+.main-screen .title {
+    background-color: transparent;
+    height: auto;
+    left: 281px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 7px;
+    white-space: nowrap;
+    width: 95px;
+}
+
+.main-screen .message {
+    background-color: transparent;
+    height: auto;
+    left: 102px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 261px;
+    white-space: nowrap;
+    width: 37px;
+}
+
+.main-screen .fname-line {
+    background-color: transparent;
+    left: 102px;
+    position: absolute;
+    top: 16vh;
+    width: 286px;
+}
+
+input[type=text] {
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}
+
+.main-screen .mail-line {
+    background-color: transparent;
+    
+    left: 102px;
+    position: absolute;
+    top: 28vh;
+    width: 286px;
+}
+
+.main-screen .message-line {
+    background-color: transparent;
+    
+    left: 102px;
+    position: absolute;
+    top: 40vh;
+    width: 286px;
+}
+
+.main-screen .lname-line {
+    background-color: transparent;
+    
+    left: 494px;
+    position: absolute;
+    top: 16vh;
+    width: 286px;
+}
+
+.main-screen .phone {
+    background-color: transparent;
+    height: auto;
+    left: 494px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 174px;
+    white-space: nowrap;
+    width: 56px;
+}
+
+.main-screen .phone-line {
+    background-color: transparent;
+    left: 494px;
+    position: absolute;
+    top: 28vh;
+    width: 286px;
+}
+
+.main-screen .stNum {
+    background-color: transparent;
+    height: auto;
+    left: 494px;
+    letter-spacing: 0.36px;
+    line-height: 28.8px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 261px;
+    white-space: nowrap;
+    width: 56px;
+}
+
+.main-screen .stNum-line {
+    background-color: transparent;
+    left: 494px;
+    position: absolute;
+    top: 40vh;
+    width: 286px;
+}
+
+.main-screen .button {
+    position: relative;
+    background-color: #e967f5;
+    border: 1px none;
+    border-radius: 18px;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    top: 50vh;
+    left: 48vh;
+}
+
+.button:after {
+    content: "";
+    background: #e591ed;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.main-screen .ellipse-616 {
+    background-color: var(--link-water);
+    border: 1px none;
+    border-radius: 100px;
+    height: 200px;
+    left: 99px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 457px;
+    width: 200px;
+}
+
+.main-screen .ellipse-617 {
+    background-color: var(--link-water);
+    border: 1px none;
+    border-radius: 100px;
+    height: 200px;
+    left: 474px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 457px;
+    width: 200px;
+}
+
+.main-screen .ellipse-618 {
+    background-color: var(--perano);
+    border: 1px none;
+    border-radius: 80px;
+    height: 160px;
+    left: 494px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 477px;
+    width: 160px;
+}
+
+.main-screen .ellipse-623 {
+    background-color: var(--link-water);
+    border: 1px none;
+    border-radius: 100px;
+    height: 200px;
+    left: 794px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 422px;
+    width: 200px;
+}
+
+.main-screen .ellipse-624 {
+    background-color: var(--perano);
+    border: 1px none;
+    border-radius: 80px;
+    height: 160px;
+    left: 814px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 442px;
+    width: 160px;
+}
+
+.main-screen .ellipse-619 {
+    background-color: var(--blue-chalk);
+    border: 1px none;
+    border-radius: 90px;
+    height: 180px;
+    left: 274px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 447px;
+    width: 180px;
+}
+
+.main-screen .ellipse-620 {
+    background-color: var(--fresh-air);
+    border: 1px none;
+    border-radius: 65px;
+    height: 130px;
+    left: 322px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 492px;
+    width: 130px;
+}
+
+.main-screen .ellipse-627 {
+    background-color: #e1f6ff;
+    border: 1px none;
+    border-radius: 32px;
+    height: 64px;
+    left: 434px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 522px;
+    width: 64px;
+}
+
+.main-screen .ellipse-628 {
+    background-color: #62d0ff;
+    border: 1px none;
+    border-radius: 32px;
+    height: 64px;
+    left: 637px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 512px;
+    width: 64px;
+}
+
+.main-screen .ellipse-625 {
+    background-color: var(--blue-chalk);
+    border: 1px none;
+    border-radius: 90px;
+    height: 180px;
+    left: -41px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 447px;
+    width: 180px;
+}
+
+.main-screen .ellipse-621 {
+    background-color: var(--blue-chalk);
+    border: 1px none;
+    border-radius: 90px;
+    height: 180px;
+    left: 674px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 442px;
+    transform: rotate(180deg);
+    width: 180px;
+}
+
+.main-screen .ellipse-622 {
+    background-color: var(--fresh-air);
+    border: 1px none;
+    border-radius: 65px;
+    height: 130px;
+    left: 676px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 447px;
+    transform: rotate(180deg);
+    width: 130px;
+}
+
+.main-screen .ellipse-615 {
+    background-color: var(--perano);
+    border: 1px none;
+    border-radius: 80px;
+    height: 160px;
+    left: 42px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 477px;
+    width: 160px;
+}
+
+.main-screen .ellipse-626 {
+    background-color: var(--fresh-air);
+    border: 1px none;
+    border-radius: 65px;
+    height: 130px;
+    left: 7px;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 492px;
+    width: 130px;
+}
+
+input[type=password] {
+    font-size: 18px;
+    width: 38vh;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(28, 26, 142);
+    outline: none;
+}

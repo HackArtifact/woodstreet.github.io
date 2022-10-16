@@ -1,0 +1,459 @@
+:root {
+  --black: #000000;
+  --blue-chalk: #e5ddff;
+  --boston-blue: #3b96c3;
+  --fresh-air: #a8e5ff;
+  --link-water: #dde6ff;
+  --perano: #afc5ff;
+  --thunder: #2e2e2e;
+  --white: #ffffff;
+
+}
+
+.inter-normal-thunder-16px {
+  color: var(--thunder);
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-medium-black-18px {
+  color: var(--black);
+  font-family: "Inter", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.main-screen a {
+  text-decoration: none;
+}
+
+.main-screen .admin-header-img {
+    position: absolute;
+    width: 77.5px;
+    height: 67.96px;
+    left: 23px;
+    top: 19px;
+  }
+  
+  .main-screen .admin-header {
+    background-color: transparent;
+    height: 60px;
+    left: 109px;
+    position: absolute;
+    top: 27px;
+    width: 1284px;
+  }
+  
+  .main-screen .admin-header-name {
+    background-color: transparent;
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1288px;
+  }
+  
+  .main-screen .admin-wood-street-header {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    height: auto;
+    left: 0px;
+    letter-spacing: 4.44px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 4px;
+    white-space: nowrap;
+    width: 198px;
+  }
+  
+  .main-screen .admin-academy-header {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 13.92px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 33px;
+    white-space: nowrap;
+    width: 198px;
+  }
+  
+  .main-screen .admin-button-header {
+    align-items: center;
+    background-color: #e967f5;
+    border: 1px none;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    left: 1124px;
+    mix-blend-mode: normal;
+    padding: 12px;
+    position: absolute;
+    top: 0px;
+    width: 140px;
+  }
+  
+  .main-screen .admin-active-button {
+    background-color: transparent;
+    color: var(--white);
+    font-family: "Inter", Helvetica;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    margin-top: -1.00px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  .main-screen .admin-profile {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1138px;
+    top: 15px;
+  }
+  
+  .main-screen .admin-profile-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1208px;
+    top: -2px;
+  }
+  
+  .main-screen .admin-header-navbar {
+    background-color: transparent;
+    height: 25px;
+    left: 286px;
+    position: absolute;
+    top: 13px;
+    width: 776px;
+  }
+  
+  .main-screen .admin-shop-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 488px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .admin-store-location-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 570px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  .main-screen .admin-reports-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 722px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .admin-contact-us-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 90px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .admin-about-us-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 210px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .admin-repair-services-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 330px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .admin-tech-news-navbar {
+    background-color: transparent;
+    height: auto;
+    left: -30px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+/* .................................. */
+  .main-screen .header-img {
+    position: absolute;
+    width: 77.5px;
+    height: 67.96px;
+    left: 23px;
+    top: 19px;
+  }
+  
+  .main-screen .header {
+    background-color: transparent;
+    height: 60px;
+    left: 109px;
+    position: absolute;
+    top: 27px;
+    width: 1284px;
+  }
+  
+  .main-screen .header-name {
+    background-color: transparent;
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 1288px;
+  }
+  
+  .main-screen .wood-street-header {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    height: auto;
+    left: 0px;
+    letter-spacing: 4.44px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 4px;
+    white-space: nowrap;
+    width: 198px;
+  }
+  
+  .main-screen .academy-header {
+    background-color: transparent;
+    color: var(--black);
+    font-family: "Inter", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    left: 0px;
+    letter-spacing: 13.92px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 33px;
+    white-space: nowrap;
+    width: 198px;
+  }
+  
+  .main-screen .button-header {
+    align-items: center;
+    background-color: #e967f5;
+    border: 1px none;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    left: 1124px;
+    mix-blend-mode: normal;
+    padding: 12px;
+    position: absolute;
+    top: 0px;
+    width: 140px;
+  }
+  
+  .main-screen .active-button {
+    background-color: transparent;
+    color: var(--white);
+    font-family: "Inter", Helvetica;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    margin-top: -1.00px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  .main-screen .profile {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1130px;
+    margin-top: 15px;
+  }
+  
+  .main-screen .profile-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 1208px;
+    top: -2px;
+  }
+  
+  .main-screen .header-navbar {
+    background-color: transparent;
+    height: 25px;
+    left: 286px;
+    position: absolute;
+    top: 13px;
+    width: 776px;
+  }
+  
+  .main-screen .shop-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 551px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .store-location-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 654px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .contact-us-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 132px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .about-us-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 267px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 1px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .repair-services-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 387px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
+  
+  .main-screen .tech-news-navbar {
+    background-color: transparent;
+    height: auto;
+    left: 0px;
+    letter-spacing: 0.00px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: left;
+    top: 0px;
+    white-space: nowrap;
+    width: auto;
+  }
