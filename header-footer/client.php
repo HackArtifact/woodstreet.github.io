@@ -11,7 +11,7 @@
                 </a>
                 <a href="profile.php" class="inter-normal-thunder-16px">
                 <!-- <div class="profile"> -->
-                    <p class="profile"><?php echo $_SESSION['id']; ?></p>
+                    <p class="profile"><?php echo $user_data['firstName']; ?></p>
                 <!-- </div> -->
                     <img class="profile-img" src="images/Landing-student.png">
                 </a>

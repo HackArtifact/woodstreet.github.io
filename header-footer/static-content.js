@@ -1,7 +1,7 @@
 class AcademyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = ` <a href="Home.php" title="Home">
-    <img class="header-img" src="images/WiWorks.png">
+    <img class="header-img" src="../images/WiWorks.png">
     <div class="header">
         <div class="header-name">
             <div class="wood-street-header">
@@ -11,7 +11,7 @@ class AcademyHeader extends HTMLElement {
                 Academy
             </div>
             </a>
-            <a href="login.html">
+            <a href="login.php">
                 <div class="button-header">
                     <div class="active-button">
                         Login
@@ -62,7 +62,7 @@ class LoggedHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
     <a href="Home.php" title="Home">
-        <img class="header-img" src="images/WiWorks.png">
+        <img class="header-img" src="../images/WiWorks.png">
         <div class="header">
             <div class="header-name">
                 <div class="wood-street-header">
@@ -76,7 +76,7 @@ class LoggedHeader extends HTMLElement {
         <div class="profile">
             <?php echo $_SESSION['id']; ?>
         </div>
-        <img class="profile-img" src="images/Landing-student.png">
+        <img class="profile-img" src="../images/Landing-student.png">
     </a>
     </div>
     <div class="header-navbar">
@@ -122,7 +122,7 @@ class AdminHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
     <a href="Home.php" title="Home">
-        <img class="header-img" src="images/WiWorks.png">
+        <img class="header-img" src="../images/WiWorks.png">
         <div class="header">
             <div class="header-name">
                 <div class="wood-street-header">

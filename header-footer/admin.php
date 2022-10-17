@@ -12,7 +12,7 @@
 </a>
 <a href="profile.php" class="inter-normal-thunder-16px">
     <div class="profile">
-    <?php echo $_SESSION['id']; ?>
+    <?php echo $user_data['firstName']; ?>
     </div>
     <img class="profile-img" src="images/Landing-student.png">
 </a>
@@ -34,7 +34,7 @@
         </a>
     </div>
     <div class="admin-about-us-navbar">
-        <a class="inter-normal-thunder-16px" href="Home.php#target">
+        <a class="inter-normal-thunder-16px" href="../Home.php#target">
             About US
         </a>
     </div>

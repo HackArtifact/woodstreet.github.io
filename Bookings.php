@@ -1,33 +1,14 @@
 <?php
-require_once("config.php");
-#if user is logged in start session 
-session_start();
 
-//check if the user is logged in
-if (isset($_SESSION['access']) && $_SESSION['access'] == "yes") {
-    //if the user is logged in, display the profile page
+    #if user is logged in start session 
+    session_start();
 
-} else {
-    //if the user is not logged in, redirect to login page
-    header("Location:login.html");
-}
+    //check if the user is logged in
 
-//call on database login credentials
+    include("login/connection.php");
+    include("login/functions.php");
 
-
-//connect to database
-$connection = mysqli_connect(SERVER, USERNAME, PASSWORD, DATABASE) or die("<p style=\"color:red\">Error! Could not connect to database.</p>");
-if(isset($_SESSION['admin'])){
-    $query = "SELECT technician_id as customer_id ,  SUBSTRING_INDEX(full_name, \" \", 1) as firstName, SUBSTRING_INDEX(full_name, \" \", -1) as lastName, email, password, labour_rate, admin, job_title FROM technician WHERE technician_id = '" . $_SESSION['id']. "'";
-}else{
-    $query = "SELECT * FROM customers WHERE customer_id = '" . $_SESSION['id'] . "'";
-}
-$results = mysqli_query($connection, $query) or die("<p style=\"color:red\">Error! Could not update customer details.</p>".mysqli_error($connection));
-
-$row = mysqli_fetch_array($results);
-
-// mysqli_close($connection);
-
+    $user_data = check_login($con);
 
 ?>
 
@@ -61,19 +42,13 @@ $row = mysqli_fetch_array($results);
         <div class="main-screen screen">
             <!-- Constant header -->
             <?php
-            if (isset($_SESSION['access']) && $_SESSION['access'] == "yes") {
-                //if the user is logged in, display the bookings page
-                if(isset($_SESSION['admin'])){
-                    include 'header-footer/admin.php';
-                }
-                else{
-                    include 'header-footer/client.php';
-                }
-
-            } else {
-                //if the user is not logged in, redirect to login page
-                include 'header-footer/initial.php';
+            
+            if($user_data['email'] === 'g19f7591@campus.ru.ac.za'){
+                include 'header-footer/admin.php';
+            }else{
+                include 'header-footer/client.php';
             }
+
             ?>
 
             <div class="ellipse-1"></div>
@@ -116,7 +91,7 @@ $row = mysqli_fetch_array($results);
 
                         <div id="bookerDetails">
                             <!-- if statements for when the other radio button is selected-->
-                            <input type="radio" class="radio-me" id="Me" name="<?php echo $_SESSION['id']?>" onclick="dis()"></input>
+                            <input type="radio" class="radio-me" id="Me" name="name" onclick="dis()"></input>
                             <div class="Me">Me</div>
                             <input type="radio" class="radio-other" id="Other" name="name" onclick="allows()"></input>
                             <div class="Other">Other</div>
@@ -125,24 +100,24 @@ $row = mysqli_fetch_array($results);
                                 <label for="first-name">First Name</label>
                             </div>
                             <input type="text" class="first-name-input" id="first-name" name="first-name"
-                                value="<?php echo $row['firstName']; ?>" disabled required>
+                                value="<?php echo $user_data['firstName']; ?>" disabled required>
 
                             <div class="last-name roboto-medium-black-18px">
                                 <label for="last-name">Last Name</label>
                             </div>
                             <input type="text" class="last-name-input" id="last-name" name="last-name"
-                                value="<?php echo $row['lastName']; ?>" disabled required>
+                                value="<?php echo $user_data['lastName']; ?>" disabled required>
 
                             <div class="number roboto-medium-black-18px">
                                 <label for="studNum">Staff/Student Number</label>
                             </div>
                             <input type="text" class="number-input" id="studNum" name="studNum"
-                                value="<?php echo $_SESSION['id']; ?>" disabled required>
+                                value="<?php echo $user_data['stNum']; ?>" disabled required>
 
                             <div class="email roboto-medium-black-18px">
                                 <label for="mail">Email</label>
                             </div>
-                            <input type="email" class="email-input" id="mail" name="mail" value="<?php echo $_SESSION['email']; ?>"
+                            <input type="email" class="email-input" id="mail" name="mail" value="<?php echo $user_data['email']; ?>"
                                 disabled required>
 
                             <script>

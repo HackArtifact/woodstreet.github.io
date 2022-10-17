@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- Main Page/header/footer styles -->
     <link rel="stylesheet" href="HomePage.css" />
     <link rel="stylesheet" href="scrollAnimate.css" />
@@ -38,19 +38,18 @@
             session_start();
 
             //check if the user is logged in
-            if (isset($_SESSION['access']) && $_SESSION['access'] == "yes") {
-                //if the user is logged in, display the bookings page
-                if(isset($_SESSION['admin'])){
-                    include 'header-footer/admin.php';
-                }
-                else{
-                    include 'header-footer/client.php';
-                }
 
-            } else {
-                //if the user is not logged in, redirect to login page
-                include 'header-footer/initial.php';
+            include("login/connection.php");
+            include("login/functions.php");
+
+            $user_data = check_login($con);
+
+            if($user_data['email'] === 'g19f7591@campus.ru.ac.za'){
+                include 'header-footer/admin.php';
+            }else{
+                include 'header-footer/client.php';
             }
+
             ?>
             
             <script type="text/javascript">
