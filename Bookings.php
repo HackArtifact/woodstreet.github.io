@@ -10,6 +10,54 @@
 
     $user_data = check_login($con);
 
+    //if user has submitted the form
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        //something was posted
+        $radio = $_POST['name'];
+        $brand = $_POST['brand'];
+        $model = $_POST['model'];
+        $date = $_POST['date'];
+        $problem = $_POST['problem'];
+
+        if($radio == "me" || empty($radio)){
+            $user_id = $user_data['id'];
+            $firstName = $user_data['firstName'];
+            $lastName = $user_data['lastName'];
+            $stNum = $user_data['stNum'];
+            $email = $user_data['email'];
+
+            $query = "INSERT INTO bookinglog (user_id, radio, firstName, lastName, stNum, email, brand, model, date, problem) 
+            VALUES ($user_id, 'me', '$firstName', '$lastName', '$stNum', '$email', '$brand', '$model', '$date', '$problem')";
+            mysqli_query($con, $query);
+
+            echo "<script type='text/javascript'>alert('Booking has been made!');
+                window.location='Profile.php';
+                    </script>";
+        }else{
+            $email = $_POST['email'];
+
+            $query = "SELECT * FROM customerlog WHERE email = '$email'";
+            $result = mysqli_query($con, $query);
+            $row = mysqli_fetch_assoc($result);
+
+            $user_id = $row['id'];
+            $firstName = $row['firstName'];
+            $lastName = $row['lastName'];
+            $stNum = $row['stNum'];
+            $email = $row['email'];
+
+            $query = "INSERT INTO bookinglog (user_id, radio, firstName, lastName, stNum, email, brand, model, date, problem)
+            VALUES ($user_id, 'other', '$firstName', '$lastName', '$stNum', '$email', '$brand', '$model', '$date', '$problem')";
+            mysqli_query($con, $query);
+
+                 echo "<script type='text/javascript'>alert('An email has been sent, please confirm booking!');
+                    window.location='Bookings.php';
+                    </script>";
+                    die;
+        }
+        
+    }
 ?>
 
 <!DOCTYPE html>
@@ -71,13 +119,13 @@
                     What problem do you have... we'll make a plan
                 </p>
             </div>
-            <form action="book.php" method="post">
+            <form action="Bookings.php" method="post">
                 <div class="detail-part">
                     <div class="detail-the-device-problem">
                         <label for="problem-input">Detail the device problem</label>
                     </div>
-                    <input type="text" class="write-your-message" id="problem-input"
-                        placeholder="Enter your problem here...">
+                    <input type="text" class="write-your-message" id="problem-input" name="problem"
+                        placeholder="Enter your problem here..." required>
                 </div>
 
                 <div class="order-page">
@@ -91,58 +139,58 @@
 
                         <div id="bookerDetails">
                             <!-- if statements for when the other radio button is selected-->
-                            <input type="radio" class="radio-me" id="Me" name="name" onclick="dis()"></input>
+                            <input type="radio" class="radio-me" id="Me" name="name" value="me" onclick="dis()"></input>
                             <div class="Me">Me</div>
-                            <input type="radio" class="radio-other" id="Other" name="name" onclick="allows()"></input>
+                            <input type="radio" class="radio-other" id="Other" name="name" value="other" onclick="allows()"></input>
                             <div class="Other">Other</div>
 
                             <div class="first-name roboto-medium-black-18px">
-                                <label for="first-name">First Name</label>
+                                <label for="firstName">First Name</label>
                             </div>
-                            <input type="text" class="first-name-input" id="first-name" name="first-name"
+                            <input type="text" class="first-name-input" id="firstName" name="firstName"
                                 value="<?php echo $user_data['firstName']; ?>" disabled required>
 
                             <div class="last-name roboto-medium-black-18px">
-                                <label for="last-name">Last Name</label>
+                                <label for="lastName">Last Name</label>
                             </div>
-                            <input type="text" class="last-name-input" id="last-name" name="last-name"
+                            <input type="text" class="last-name-input" id="lastName" name="lastName"
                                 value="<?php echo $user_data['lastName']; ?>" disabled required>
 
                             <div class="number roboto-medium-black-18px">
-                                <label for="studNum">Staff/Student Number</label>
+                                <label for="stNum">Staff/Student Number</label>
                             </div>
-                            <input type="text" class="number-input" id="studNum" name="studNum"
+                            <input type="text" class="number-input" id="stNum" name="stNum"
                                 value="<?php echo $user_data['stNum']; ?>" disabled required>
 
                             <div class="email roboto-medium-black-18px">
-                                <label for="mail">Email</label>
+                                <label for="email">email</label>
                             </div>
-                            <input type="email" class="email-input" id="mail" name="mail" value="<?php echo $user_data['email']; ?>"
+                            <input type="email" class="email-input" id="email" name="email" value="<?php echo $user_data['email']; ?>"
                                 disabled required>
 
                             <script>
                             function allows() {
-                                document.getElementById("first-name").disabled = false;
-                                document.getElementById("last-name").disabled = false;
-                                document.getElementById("studNum").disabled = false;
-                                document.getElementById("mail").disabled = false;
+                                document.getElementById("firstName").disabled = false;
+                                document.getElementById("lastName").disabled = false;
+                                document.getElementById("stNum").disabled = false;
+                                document.getElementById("email").disabled = false;
                             }
 
                             function dis() {
-                                document.getElementById("first-name").disabled = true;
-                                document.getElementById("last-name").disabled = true;
-                                document.getElementById("studNum").disabled = true;
-                                document.getElementById("mail").disabled = true;
+                                document.getElementById("firstName").disabled = true;
+                                document.getElementById("lastName").disabled = true;
+                                document.getElementById("stNum").disabled = true;
+                                document.getElementById("email").disabled = true;
                             }
                             </script>
                         </div>
 
 
                         <div class="device-brand roboto-medium-black-18px">
-                            <label for="dev-brand">Device Brand</label>
+                            <label for="brand">Device Brand</label>
                         </div>
-                        <!-- <input type="text" class="brand-input" id="dev-brand" placeholder="Enter your device brand here..."> -->
-                        <select class="brand-input" name="dev-brand" id="dev-brand">
+                        <!-- <input type="text" class="brand-input" id="brand" placeholder="Enter your device brand here..."> -->
+                        <select class="brand-input" name="brand" id="brand">
                             <option value="apple">Apple</option>
                             <option value="acer">Acer</option>
                             <option value="asus">Asus</option>
@@ -158,15 +206,15 @@
                         </select>
 
                         <div class="device-model roboto-medium-black-18px">
-                            <label for="dev-model">Device Model</label>
+                            <label for="model">Device Model</label>
                         </div>
-                        <input type="text" class="model-input" id="dev-model" name="dev-model"
+                        <input type="text" class="model-input" id="model" name="model"
                             placeholder="Enter your device model here..." required>
 
                         <div class="device-colour roboto-medium-black-18px">
-                            <label for="dev-colour">Date</label>
+                            <label for="date">Date</label>
                         </div>
-                        <input type="date" class="colour-input" id="dev-colour" name="dev-colour" placeholder="Enter colour here..."
+                        <input type="date" class="colour-input" id="date" name="date" placeholder="Enter colour here..."
                             required>
 
                     </div>
