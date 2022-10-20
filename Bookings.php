@@ -40,7 +40,11 @@
             $query = "SELECT * FROM customerlog WHERE email = '$email'";
             $result = mysqli_query($con, $query);
             $row = mysqli_fetch_assoc($result);
-
+            if($row !== '0'){
+                echo "<script type='text/javascript'>alert('Email does not exist!');
+                window.location='Bookings.php';
+                    </script>";
+            }else{
             $user_id = $row['id'];
             $firstName = $row['firstName'];
             $lastName = $row['lastName'];
@@ -55,6 +59,7 @@
                     window.location='Bookings.php';
                     </script>";
                     die;
+            }
         }
         
     }

@@ -126,7 +126,6 @@
             function allows() {
                 document.getElementById("first-name").disabled = false;
                 document.getElementById("last-name").disabled = false;
-                document.getElementById("mail").disabled = false;
                 document.getElementById("phone").disabled = false;
             }
             </script>
@@ -139,40 +138,35 @@
                                 Status:
                             </div>
 
-                            <input type="radio" class="radio-order" id="r-order" name="name" value="1">
                             <div class="ordered roboto-medium-black-18px">
                                 Order Recieved
                             </div>
 
-                            <input type="radio" class="radio-tech" id="r-tech" name="name" value="2">
                             <div class="tech-ass roboto-medium-black-18px">
                                 Technician Assigned
                             </div>
 
-                            <input type="radio" class="radio-parts" id="r-parts" name="name" value="3">
                             <div class="p-order roboto-medium-black-18px">
                                 Parts Ordered
                             </div>
 
-                            <input type="radio" class="radio-progress" id="r-prog" name="name" value="4">
                             <div class="in-progress roboto-medium-black-18px">
                                 Repair In Progress
                             </div>
 
-                            <input type="radio" class="radio-invoice" id="r-invoice" name="name" value="5">
                             <div class="invoice roboto-medium-black-18px">
                                 Invoice Sent
                             </div>
 
-                            <input type="radio" class="radio-collect" id="r-collect" name="name" value="6">
+                            <progress value = "<?php echo $user_data[''] ?>" max = "6"></progress>
                             <div class="expected-delivery roboto-medium-black-18px">
                                 Collect
                             </div>
 
                             <div class="message-technician roboto-medium-black-18px">
-                                Message Technician
+                                Message "Your Technician"<!--<?php echo $user_data[''] ?>-->
                             </div>
-                            <textarea class="tech-msg" placeholder="Write your message here..."></textarea>
+                            <textarea class="tech-msg" name="text" placeholder="Write your message here..."></textarea>
 
                             <button type="submit" class="buttonTech" name="msgSubmit" id="msgSubmit">SEND</button>
                         </div>

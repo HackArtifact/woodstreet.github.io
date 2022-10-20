@@ -345,8 +345,8 @@ input[type='radio'] {
     overflow: hidden;
     cursor: pointer;
 
-    top: 250px;
-    left: 485px;
+    top: 129px;
+    left: 345px;
 }
 
 .main-screen .buttonLog {
@@ -525,20 +525,6 @@ input[type='radio'] {
     width: auto;
 }
 
-.main-screen .radio-order {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 60px;
-    width: auto;
-    pointer-events: none;
-}
-
 .main-screen .tech-ass {
     background-color: transparent;
     height: auto;
@@ -550,20 +536,6 @@ input[type='radio'] {
     text-align: left;
     top: 100px;
     width: auto;
-}
-
-.main-screen .radio-tech {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 100px;
-    width: auto;
-    pointer-events: none;
 }
 
 .main-screen .p-order {
@@ -579,20 +551,6 @@ input[type='radio'] {
     width: auto;
 }
 
-.main-screen .radio-parts {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 140px;
-    width: auto;
-    pointer-events: none;
-}
-
 .main-screen .in-progress {
     background-color: transparent;
     height: auto;
@@ -604,20 +562,6 @@ input[type='radio'] {
     text-align: left;
     top: 180px;
     width: auto;
-}
-
-.main-screen .radio-progress {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 180px;
-    width: auto;
-    pointer-events: none;
 }
 
 .main-screen .invoice {
@@ -633,20 +577,6 @@ input[type='radio'] {
     width: auto;
 }
 
-.main-screen .radio-invoice {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 220px;
-    width: auto;
-    pointer-events: none;
-}
-
 .main-screen .expected-delivery {
     background-color: transparent;
     height: auto;
@@ -660,31 +590,25 @@ input[type='radio'] {
     width: auto;
 }
 
-.main-screen .radio-collect {
-    background-color: transparent;
-    height: auto;
-    left: 22px;
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: left;
-    top: 260px;
-    width: auto;
-    pointer-events: none;
+.main-screen progress {
+    margin-top: 164px;
+    margin-left: -82px;
+    transform: rotate(90deg);
+    width: 224px;
+    accent-color: #e967f5;
 }
 
 .main-screen .message-technician {
     background-color: transparent;
     height: auto;
-    left: 496px;
+    left: 460px;
     letter-spacing: 0.00px;
     line-height: normal;
     mix-blend-mode: normal;
     position: absolute;
     text-align: center;
     top: 18px;
-    width: 170px;
+    width: 240px;
 }
 
 .main-screen .tech-msg {
